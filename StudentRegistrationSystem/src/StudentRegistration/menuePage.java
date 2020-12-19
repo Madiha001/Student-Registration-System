@@ -84,6 +84,7 @@ public class menuePage extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/StudentRegistration/student-registrationr1.png"))); // NOI18N
         jLabel6.setText("Student Registration System");
+        jLabel6.setAlignmentX(0.5F);
         jLabel6.setMaximumSize(new java.awt.Dimension(790, 452));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -97,7 +98,7 @@ public class menuePage extends javax.swing.JFrame {
             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
         );
 
-        jLabel7.setFont(new java.awt.Font("Bahnschrift", 1, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Bahnschrift", 1, 20)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 153));
         jLabel7.setText("Menu Page");
 
