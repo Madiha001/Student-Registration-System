@@ -6,6 +6,7 @@
 <<<<<<< HEAD
         <group>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <file>file:/C:/Users/Admin/Desktop/dbProject/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/signUp.java</file>
             <file>file:/C:/Users/Admin/Desktop/dbProject/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/addStudent.java</file>
 			<file>file:/C:/Users/Admin/Desktop/dbProject/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/login.java</file>
@@ -16,6 +17,10 @@
 =======
             <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/signUp.java</file>
             <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/searchPage.java</file>
+=======
+            <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/menuPage.java</file>
+            <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/deleteStudent.java</file>
+>>>>>>> feature/deleteStudent
         </group>
 >>>>>>> feature/searchStudent
 =======
