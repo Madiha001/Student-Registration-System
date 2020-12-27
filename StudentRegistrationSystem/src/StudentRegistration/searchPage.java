@@ -46,7 +46,7 @@ public class searchPage extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
-        tf = new javax.swing.JTextField();
+        jTextFeild = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -70,7 +70,6 @@ public class searchPage extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(751, 384));
 
         jPanel1.setBackground(new java.awt.Color(153, 205, 255));
         jPanel1.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
@@ -80,18 +79,18 @@ public class searchPage extends javax.swing.JFrame {
         jPanel1.setName(""); // NOI18N
         jPanel1.setPreferredSize(new java.awt.Dimension(383, 45));
 
-        tf.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
-        tf.addActionListener(new java.awt.event.ActionListener() {
+        jTextFeild.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        jTextFeild.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfActionPerformed(evt);
+                jTextFeildActionPerformed(evt);
             }
         });
-        tf.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextFeild.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                tfKeyPressed(evt);
+                jTextFeildKeyPressed(evt);
             }
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                tfKeyTyped(evt);
+                jTextFeildKeyTyped(evt);
             }
         });
 
@@ -130,13 +129,11 @@ public class searchPage extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
         );
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -153,70 +150,71 @@ public class searchPage extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(197, 197, 197)
+                        .addGap(165, 165, 165)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(217, 217, 217)
+                        .addGap(189, 189, 189)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton1)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton1)
-                                .addGap(125, 125, 125)
+                                .addGap(89, 89, 89)
                                 .addComponent(jButton2))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(58, 58, 58)
-                                .addComponent(tf, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(70, 70, 70)
+                                .addComponent(jTextFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(315, 315, 315)
+                        .addGap(294, 294, 294)
                         .addComponent(jLabel5)))
-                .addContainerGap(172, Short.MAX_VALUE))
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
+                .addContainerGap(203, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(46, 46, 46)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 751, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 384, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfActionPerformed
+    private void jTextFeildActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFeildActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfActionPerformed
+    }//GEN-LAST:event_jTextFeildActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-        String id = tf.getText();
+        String id = jTextFeild.getText();
         if(id.length()==0)
         {
            JOptionPane.showMessageDialog(this ,"<html><p1 style='font-family: Bahnschrift; font-size :18pt;'> <b>please insert proper id </b>"); 
@@ -231,8 +229,9 @@ public class searchPage extends javax.swing.JFrame {
             {
                 Class.forName("com.mysql.jdbc.Driver");
                 con = DriverManager.getConnection("jdbc:mysql://localhost/student_registration","root","");
+                //System.out.println("Sucesfull") ;
                 stmt =con.createStatement();
-                String sql = "SELECT student_id ,student_name ,department_name ,course_name ,teacher_name ,semester ,phone_no FROM student JOIN department USING(dept_id) JOIN course USING(course_id) JOIN teacher USING(teacher_id) WHERE student_id =?";
+                String sql = "SELECT student_id ,student_name ,department_name ,course_name ,teacher_name ,semester ,phone_no FROM student JOIN department USING(dept_id) JOIN course USING(course_id) JOIN teacher USING(teacher_id) WHERE student_id ="+id;
                 rs = stmt.executeQuery(sql);
                 if(rs.next())
                 {
@@ -250,8 +249,9 @@ public class searchPage extends javax.swing.JFrame {
                  DefaultTableModel tb1Model = (DefaultTableModel)jTable1.getModel();
                  tb1Model.addRow(tbData);
                  
-                    //tf.setText("");
-                    tf.requestFocus(); 
+                    
+                   // jTextFeild.setText("");
+                   // jTextFeild.requestFocus();
                     
                 }
                 }
@@ -260,7 +260,11 @@ public class searchPage extends javax.swing.JFrame {
                  JOptionPane.showMessageDialog(this ,"<html><p1 style='font-family: Bahnschrift; font-size :18pt;'> <b>Record  not found</b>"); 
                 }
             }
-            catch (SQLException | ClassNotFoundException ex)
+            catch (ClassNotFoundException ex)
+            {
+                Logger.getLogger(searchPage.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            catch (SQLException ex)
             {
                 Logger.getLogger(searchPage.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -274,18 +278,18 @@ public class searchPage extends javax.swing.JFrame {
          //new menuPage().setVisible(true) ;
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void tfKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfKeyPressed
+    private void jTextFeildKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFeildKeyPressed
    
-    }//GEN-LAST:event_tfKeyPressed
+    }//GEN-LAST:event_jTextFeildKeyPressed
 
-    private void tfKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfKeyTyped
+    private void jTextFeildKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFeildKeyTyped
        char c = evt.getKeyChar();
-        if(!(Character.isDigit(c)|| c == KeyEvent.VK_BACKSPACE || c == KeyEvent.VK_DELETE) || tf.getText().length()>2)
+        if(!(Character.isDigit(c)|| c == KeyEvent.VK_BACKSPACE || c == KeyEvent.VK_DELETE) || jTextFeild.getText().length()>2)
         {
             getToolkit().beep();
             evt.consume();
         }
-    }//GEN-LAST:event_tfKeyTyped
+    }//GEN-LAST:event_jTextFeildKeyTyped
 
     /**
      * @param args the command line arguments
@@ -335,6 +339,6 @@ public class searchPage extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextField tf;
+    private javax.swing.JTextField jTextFeild;
     // End of variables declaration//GEN-END:variables
 }
