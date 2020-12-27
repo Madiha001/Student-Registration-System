@@ -13,6 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -206,16 +207,20 @@ public class showStudents extends javax.swing.JFrame {
                 tblModel.addRow(tblData);
             }
         } 
-        catch (ClassNotFoundException | SQLException ex) 
+        catch (ClassNotFoundException ex) 
         {
-            Logger.getLogger(showStudents.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null,"<html><p1 style='font-family: Bahnschrift; font-size: 18pt;'><b>Class not found!</b>");
+        } 
+        catch (SQLException ex) 
+        {
+            JOptionPane.showMessageDialog(null,"<html><p1 style='font-family: Bahnschrift; font-size: 18pt;'><b>Database connectivity failure!</b>");
         } 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        //new menuPage().setVisible(true);
+        new menuPage().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -246,10 +251,8 @@ public class showStudents extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new showStudents().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new showStudents().setVisible(true);
         });
     }
 
