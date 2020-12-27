@@ -14,12 +14,12 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-public class showCourses extends javax.swing.JFrame {
+public class showDepartments extends javax.swing.JFrame {
 
     /**
      * Creates new form showCourses
      */
-    public showCourses() {
+    public showDepartments() {
         initComponents();
         jButton1.setBackground(Color.DARK_GRAY);
         jButton2.setBackground(Color.DARK_GRAY);
@@ -75,7 +75,7 @@ public class showCourses extends javax.swing.JFrame {
 
             },
             new String [] {
-                "course_id", "course_name"
+                "dept_id", "department_name"
             }
         ) {
             Class[] types = new Class [] {
@@ -103,7 +103,7 @@ public class showCourses extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel2.setText("Courses Table Records");
+        jLabel2.setText("Department Table Records");
 
         jButton1.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -128,7 +128,11 @@ public class showCourses extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(328, Short.MAX_VALUE)
+                .addContainerGap(204, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(244, 244, 244))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(310, 310, 310))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -141,10 +145,6 @@ public class showCourses extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addGap(74, 74, 74))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(235, 235, 235))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -182,14 +182,14 @@ public class showCourses extends javax.swing.JFrame {
         {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/student_registration","root","");
-            preState = con.prepareStatement("select * from course;");
+            preState = con.prepareStatement("select * from department;");
             rs = preState.executeQuery();
             while(rs.next())
             {
-                String c_id = String.valueOf(rs.getInt("course_id"));
-                String cname = rs.getString("course_name");
+                String d_id = String.valueOf(rs.getInt("dept_id"));
+                String dname = rs.getString("deptartment_name");
                 
-                String tblData[] = {c_id,cname};
+                String tblData[] = {d_id,dname};
                 DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
                 tblModel.addRow(tblData);
             }
@@ -207,7 +207,7 @@ public class showCourses extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        new menuPage().setVisible(true);
+        //new menuPage().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -227,20 +227,20 @@ public class showCourses extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(showCourses.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(showDepartments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(showCourses.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(showDepartments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(showCourses.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(showDepartments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(showCourses.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(showDepartments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new showCourses().setVisible(true);
+                new showDepartments().setVisible(true);
             }
         });
     }
