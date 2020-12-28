@@ -2,36 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <group>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <file>file:/C:/Users/Admin/Desktop/dbProject/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/signUp.java</file>
-            <file>file:/C:/Users/Admin/Desktop/dbProject/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/addStudent.java</file>
-			<file>file:/C:/Users/Admin/Desktop/dbProject/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/login.java</file>
-			<file>file:/C:/Users/Admin/Desktop/dbProject/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/menuPage.java</file>
-
-
-		</group>
-=======
-            <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/signUp.java</file>
-            <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/searchPage.java</file>
-=======
-            <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/menuPage.java</file>
-            <file>file:/C:/Users/M.Bytes/Desktop/db_Project/Student-Registration-System/StudentRegistrationSystem/src/StudentRegistration/deleteStudent.java</file>
->>>>>>> feature/deleteStudent
-        </group>
->>>>>>> feature/searchStudent
-=======
         <group/>
->>>>>>> feature/updateStudent
-=======
-        <group/>
->>>>>>> feature/showTables
-=======
-        <group/>
->>>>>>> feature/menuPage
     </open-files>
 </project-private>

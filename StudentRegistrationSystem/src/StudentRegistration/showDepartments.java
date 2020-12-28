@@ -182,7 +182,7 @@ public class showDepartments extends javax.swing.JFrame {
         {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/student_registration","root","");
-            preState = con.prepareStatement("select * from department;");
+            preState = con.prepareStatement("SELECT * FROM department;");
             rs = preState.executeQuery();
             while(rs.next())
             {
