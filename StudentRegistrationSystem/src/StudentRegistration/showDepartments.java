@@ -187,7 +187,7 @@ public class showDepartments extends javax.swing.JFrame {
             while(rs.next())
             {
                 String d_id = String.valueOf(rs.getInt("dept_id"));
-                String dname = rs.getString("deptartment_name");
+                String dname = rs.getString("department_name");
                 
                 String tblData[] = {d_id,dname};
                 DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
