@@ -1,12 +1,15 @@
 # Student-Registration-System
-Mini student management system having features to register and manage students.
 --------------------------------------------------------------------------
+Mini student management system having features to register and manage students.
 
 Project assigned by:
+
 Khalid Hussain, Instructor at Sukkur IBA University,Sindh.
 
 Project done by:
-Depika, Student of BSCS-IV at Sukkur IBA University,Sindh. 
+
+Depika, Student of BSCS-IV at Sukkur IBA University,Sindh.
+
 Madiha, Student of BSCS-IV at Sukkur IBA University,Sindh.
 
 -----------------------------------------[ INSTALLATION INSTRUCTIONS ]--
@@ -74,4 +77,3 @@ After logging in you will see another window, in which you will see different op
 Operations inlcude add student, search student, update student, delete student, show students, show teachers, show courses, show departments.
 
 This is all about our project. We hope you can run it properly.
-------------------------------------------------------------------------
